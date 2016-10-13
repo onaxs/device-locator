@@ -1,0 +1,42 @@
+<html>
+	<head>
+		<title>Devices | Xano Sweeting</title>
+
+		<style type="text/css">
+			body {
+				font-family: 'Gill Sans', Helvetica, sans-serif;
+				text-align: center;
+				color: #333;
+			}
+			h1 ,h2 {
+				font-weight: 200;
+			}
+			.device {
+				border-radius: 15px;
+				border: 1px solid black;
+			}
+		</style>
+	</head>
+
+	<body>
+		<h1>Mr. Derps Devices</h1>
+		<hr/>
+		<div id="devices">
+
+			<br/>
+			<div class="device">
+				<h2>
+					{{name}}<br/>
+					<small>({{latitude}}, {{longitude}})</small>
+				</h2>
+				<iframe
+				  width="600"
+				  height="450"
+				  frameborder="0" style="border:0"
+				  src="https://www.google.com/maps/embed/v1/place?key=AIzaSyAEWa0l8tcdgmi48tRmBRxk5N68rPtpbnY
+				    &q={{latitude}},{{longitude}}" allowfullscreen>
+				</iframe>
+			</div>
+		</div>
+	</body>
+</html>
